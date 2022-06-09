@@ -1,7 +1,9 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
-console.log(document.getElementById("iframe").src)
+const toggle = document.getElementById("toggle");
+const theme = window.localStorage.getItem("theme");
+
 document.getElementById("iframe").style.display = "none"
 
 function disableButton(buttonId) {
@@ -11,6 +13,34 @@ function disableButton(buttonId) {
 function enableButton(buttonId) {
     document.getElementById(buttonId).disabled = false;
 }
+
+if (theme === "dark") {
+    document.body.classList.add("dark");
+}
+
+if (theme === "dark") {
+    document.getElementById("toggle").innerText = "\u263C";
+} else {
+    document.getElementById("toggle").innerText = "\u263E";
+}  
+
+function toggleTheme(event) {
+    let text = event.textContent || event.innerText;
+    if (text == "\u263E") {
+        event.innerText = "\u263C";
+    } else {
+        event.innerText = "\u263E";
+    }
+}
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if (theme === "dark") {
+        window.localStorage.setItem("theme", "light");
+    } else {
+        window.localStorage.setItem("theme", "dark");
+    }
+});
 
 about.addEventListener("click", function() {
     disableButton("about");
