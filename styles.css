@@ -64,12 +64,16 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 10px auto;
-    padding: 20px;
+    padding: -20px 20px;
     color: var(--text-dark-gray);
     border: 2px solid var(--bg-dark-gray);
 }
 
+.btn {
+    border: none;
+}
 .nav-top a {
+    
     cursor: pointer;
 }
 

@@ -1,6 +1,10 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
+const about = document.getElementById("about");
+const interestingCounter = document.getElementById("interestingCounter"); 
+const mockhouse = document.getElementById("mockhouse"); 
+const businessCard = document.getElementById("businessCard");
 const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
 
