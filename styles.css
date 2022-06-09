@@ -69,11 +69,7 @@ body {
     border: 2px solid var(--bg-dark-gray);
 }
 
-.btn {
-    border: none;
-}
 .nav-top a {
-    
     cursor: pointer;
 }
 
@@ -99,6 +95,15 @@ body {
 .nav-top button:disabled {
     background-color: var(--bg-dark-gray);
     color: rgb(122, 122, 122);
+}
+
+.link {
+    color: var(--text-dark-gray);
+    background: transparent;
+    display: inline-block;
+    font-style: italic;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
 }
 
 .nav-bottom {
