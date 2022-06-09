@@ -47,7 +47,6 @@ toggle.addEventListener("click", () => {
 });
 
 about.addEventListener("click", function() {
-    disableButton("about");
     document.getElementById("aboutDiv").style.display = "block"
     document.getElementById("iframe").style.display = "none"
     enableButton("mockhouse");
