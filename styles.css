@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,21 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background-color: antiquewhite;
+}
+
+.about {
+    margin-top: -30vh;
+    width: 50vw;
+}
+
+.about h4 {
+    font-weight: 200;
+}
+
+.favorite-color {
+    color: #062A3E
 }
 
 .iframe {
@@ -22,8 +38,12 @@ body {
     justify-content: space-between;
     margin: 10px auto;
     padding: 20px;
-    color: rgb(34, 70, 102);
+    color: #062A3E;
     border: 2px solid #333;
+}
+
+.nav-top a {
+    cursor: pointer;
 }
 
 .nav-top h4 {
@@ -33,9 +53,15 @@ body {
 .nav-bottom {
     display: flex;
     width: 90vw;
+    align-items: center;
     justify-content: space-between;
     padding: 6px;
+    margin: 20px;
     border: 2px solid #333;
+}
+
+.nav-bottom h4 {
+    margin-left: 20px;
 }
 
 .nav-bottom button {
@@ -49,7 +75,7 @@ body {
     border: none;
 }
 .nav-bottom button:hover {
-    color: white;
+    color: antiquewhite;
     background-color: #333;
 }
 
@@ -74,17 +100,18 @@ body {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: antiquewhite;
     background-color: #333;
 }
 
 main {
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
     place-items: center;
 }
 
 .container {
+    display: none;
     text-align: center;
     color: #333;
 }
@@ -96,10 +123,9 @@ main {
 .btn {
     color: #333;
     border: 2px solid #333;
-    text-transform: uppercase;
     background: transparent;
     display: inline-block;
-    font-weight: 700;
-    font-size: 1rem;
+    font-style: italic;
     padding: 0.75rem 1.25rem;
+    cursor: pointer;
 }
