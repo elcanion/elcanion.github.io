@@ -9,6 +9,7 @@ const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
 
 document.getElementById("iframe").style.display = "none"
+document.getElementById("projectHeader").style.display = "none"
 
 function disableButton(buttonId) {
     document.getElementById(buttonId).disabled = true;
@@ -49,14 +50,19 @@ toggle.addEventListener("click", () => {
 about.addEventListener("click", function() {
     document.getElementById("aboutDiv").style.display = "block"
     document.getElementById("iframe").style.display = "none"
+    document.getElementById("projectHeader").style.display = "none"
     enableButton("mockhouse");
     enableButton("businessCard");
     enableButton("interestingCounter");
 })
 
 interestingCounter.addEventListener("click", function() {
+    document.getElementById("projectHeader").style.display = "block"
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
+
+    document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Numbers API</li>";
+
     enableButton("mockhouse");
     enableButton("businessCard");
     document.getElementById("iframe").src = "https://interesting-counter.web.app/"
@@ -64,8 +70,14 @@ interestingCounter.addEventListener("click", function() {
 })
 
 mockhouse.addEventListener("click", function() {
+    document.getElementById("projectHeader").style.display = "block"
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
+
+    
+    document.getElementById("headerList").innerHTML = "<li>NextJS</li><li>Contentful API</li><li>Firebase Auth</li>";
+
+
     enableButton("interestingCounter");
     enableButton("businessCard");
     document.getElementById("iframe").src = "https://mockhouse.vercel.app"
@@ -73,8 +85,12 @@ mockhouse.addEventListener("click", function() {
 })
 
 businessCard.addEventListener("click", function() {
+    document.getElementById("projectHeader").style.display = "block"
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
+
+    document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Contentful API</li>";
+
     enableButton("mockhouse");
     enableButton("interestingCounter");
     document.getElementById("iframe").src = "https://react-business-card-79db2.web.app/"
