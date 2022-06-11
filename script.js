@@ -1,5 +1,6 @@
 
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+var randomNumber;
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 const about = document.getElementById("about");
@@ -112,7 +113,6 @@ businessCard.addEventListener("click", function() {
 
 btn.addEventListener("click", function() {
     let hexColor = '#';
-    var randomNumber;
     for (let i = 0; i < 6; i++){
         randomNumber = Math.floor(Math.random() * 16);
         hexColor += hex[randomNumber];
