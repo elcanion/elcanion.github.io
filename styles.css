@@ -191,9 +191,8 @@ main {
 
 .projectHeader {
     display: flex;
+    flex-direction: row;
     width: 90vw;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 0px;
     margin-bottom: 20px;
     padding: 20px 0px;
@@ -205,6 +204,11 @@ main {
     color: var(--text-dark-gray);
     margin-left: 20px;
 }
+
+.techDiv {
+    width: 50%;
+}
+
 
 .techs {
     display: inline;
