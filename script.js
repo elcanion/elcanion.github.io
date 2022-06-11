@@ -113,7 +113,7 @@ businessCard.addEventListener("click", function() {
 btn.addEventListener("click", function() {
     let hexColor = '#';
     for (let i = 0; i < 6; i++){
-        randomNumber = Math.floor(Math.random() * 16);
+        let randomNumber = Math.floor(Math.random() * 16);
         hexColor += hex[randomNumber];
     }
     color.textContent = hexColor;
