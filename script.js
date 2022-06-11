@@ -64,6 +64,8 @@ interestingCounter.addEventListener("click", function() {
 
     document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Numbers API</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/interesting-counter/"
+    document.getElementById("repoURL").target = "_blank"
+    document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Interesting Counter in Github"
 
     enableButton("mockhouse");
@@ -80,6 +82,8 @@ mockhouse.addEventListener("click", function() {
     
     document.getElementById("headerList").innerHTML = "<li>NextJS</li><li>Contentful API</li><li>Firebase Auth</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/mockhouse/"
+    document.getElementById("repoURL").target = "_blank"
+    document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse in Github"
 
 
@@ -96,6 +100,8 @@ businessCard.addEventListener("click", function() {
 
     document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Contentful API</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/react-business-card/"
+    document.getElementById("repoURL").target = "_blank"
+    document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "React Business Card in Github"
 
     enableButton("mockhouse");
