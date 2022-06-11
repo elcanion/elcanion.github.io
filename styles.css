@@ -192,6 +192,7 @@ main {
 .projectHeader {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 90vw;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -205,8 +206,31 @@ main {
     margin-left: 20px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .techDiv {
     width: 50%;
+}
+
+.techDiv li{
+    text-decoration: underline;
+}
+
+.repoDiv {
+    padding-right: 20px;
+    text-align: end;
+    width: 50%;
+}
+
+
+.repoDiv a {
+    color: var(--text-dark-gray);
+    font-style: italic;
+    text-decoration: underline;
 }
 
 
@@ -229,6 +253,16 @@ main {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .techs {
+        display: block;
+    }
+
+    .techs li{
+        display: block;
+    }
 }
 
 
