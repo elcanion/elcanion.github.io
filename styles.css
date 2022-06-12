@@ -263,6 +263,11 @@ main {
     .techs li{
         display: block;
     }
+
+    .nav-bottom .nav-links {
+        display: block;
+        text-align: right;
+    }
 }
 
 

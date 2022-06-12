@@ -83,13 +83,11 @@ mockhouse.addEventListener("click", function() {
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
 
-    
     document.getElementById("headerList").innerHTML = "<li>NextJS</li><li>Contentful API</li><li>Firebase Auth</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/mockhouse/"
     document.getElementById("repoURL").target = "_blank"
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse in Github"
-
 
     enableButton("interestingCounter");
     enableButton("businessCard");
@@ -103,13 +101,11 @@ mockhouseCrm.addEventListener("click", function() {
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
 
-    
     document.getElementById("headerList").innerHTML = "<li>Dart</li><li>Flutter</li><li>Firebase Firestore</li><li>Firebase Auth</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/mockhouse-crm/"
     document.getElementById("repoURL").target = "_blank"
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse CRM in Github"
-
 
     enableButton("interestingCounter");
     enableButton("businessCard");
