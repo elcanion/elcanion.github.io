@@ -107,9 +107,9 @@ mockhouseCrm.addEventListener("click", function() {
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse CRM in Github"
 
-    enableButton("interestingCounter");
-    enableButton("businessCard");
     enableButton("mockhouse");
+    enableButton("businessCard");
+    enableButton("interestingCounter");
     document.getElementById("iframe").src = "https://mockhouse-crm.web.app/"
     disableButton("mockhouseCrm");
 })
