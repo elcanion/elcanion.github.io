@@ -6,7 +6,7 @@ const color = document.querySelector(".color");
 const about = document.getElementById("about");
 const interestingCounter = document.getElementById("interestingCounter"); 
 const mockhouse = document.getElementById("mockhouse"); 
-const mockhouseCrm = document.getElementById("mockhouse-crm"); 
+const mockhouseCrm = document.getElementById("mockhouseCrm"); 
 const businessCard = document.getElementById("businessCard");
 const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
@@ -55,7 +55,7 @@ about.addEventListener("click", function() {
     document.getElementById("iframe").style.display = "none"
     document.getElementById("projectHeader").style.display = "none"
     enableButton("mockhouse");
-    enableButton("mockhouse-crm");
+    enableButton("mockhouseCrm");
     enableButton("businessCard");
     enableButton("interestingCounter");
 })
@@ -73,7 +73,7 @@ interestingCounter.addEventListener("click", function() {
 
     enableButton("mockhouse");
     enableButton("businessCard");
-    enableButton("mockhouse-crm");
+    enableButton("mockhouseCrm");
     document.getElementById("iframe").src = "https://interesting-counter.web.app/"
     disableButton("interestingCounter");
 })
@@ -93,7 +93,7 @@ mockhouse.addEventListener("click", function() {
 
     enableButton("interestingCounter");
     enableButton("businessCard");
-    enableButton("mockhouse-crm");
+    enableButton("mockhouseCrm");
     document.getElementById("iframe").src = "https://mockhouse.vercel.app"
     disableButton("mockhouse");
 })
@@ -115,7 +115,7 @@ mockhouseCrm.addEventListener("click", function() {
     enableButton("businessCard");
     enableButton("mockhouse");
     document.getElementById("iframe").src = "https://mockhouse-crm.web.app/"
-    disableButton("mockhouse-crm");
+    disableButton("mockhouseCrm");
 })
 
 businessCard.addEventListener("click", function() {
@@ -130,7 +130,7 @@ businessCard.addEventListener("click", function() {
     document.getElementById("repoURL").textContent = "React Business Card in Github"
 
     enableButton("mockhouse");
-    enableButton("mockhouse-crm");
+    enableButton("mockhouseCrm");
     enableButton("interestingCounter");
     document.getElementById("iframe").src = "https://react-business-card-79db2.web.app/"
     disableButton("businessCard");
