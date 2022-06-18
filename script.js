@@ -4,7 +4,8 @@ var randomNumber;
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 const about = document.getElementById("about");
-const interestingCounter = document.getElementById("interestingCounter"); 
+const interestingCounter = document.getElementById("interestingCounter");
+const toDo = document.getElementById("toDo"); 
 const mockhouse = document.getElementById("mockhouse"); 
 const mockhouseCrm = document.getElementById("mockhouseCrm"); 
 const businessCard = document.getElementById("businessCard");
@@ -54,10 +55,30 @@ about.addEventListener("click", function() {
     document.getElementById("aboutDiv").style.display = "block"
     document.getElementById("iframe").style.display = "none"
     document.getElementById("projectHeader").style.display = "none"
+    enableButton("toDo");
     enableButton("mockhouse");
     enableButton("mockhouseCrm");
     enableButton("businessCard");
     enableButton("interestingCounter");
+})
+
+toDo.addEventListener("click", function() {
+    document.getElementById("projectHeader").style.display = "block"
+    document.getElementById("iframe").style.display = "inline"
+    document.getElementById("aboutDiv").style.display = "none"
+
+    document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Typescript</li><li>Firebase Firestore</li>";
+    document.getElementById("repoURL").href = "https://github.com/elcanion/todo-list-typescript/"
+    document.getElementById("repoURL").target = "_blank"
+    document.getElementById("repoURL").rel = "noopener noreferrer"
+    document.getElementById("repoURL").textContent = "To-do List in Github"
+
+    enableButton("interestingCounter");
+    enableButton("mockhouse");
+    enableButton("businessCard");
+    enableButton("mockhouseCrm");
+    document.getElementById("iframe").src = "https://todo-list-typescript.web.app/"
+    disableButton("toDo");
 })
 
 interestingCounter.addEventListener("click", function() {
@@ -71,6 +92,7 @@ interestingCounter.addEventListener("click", function() {
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Interesting Counter in Github"
 
+    enableButton("toDo");
     enableButton("mockhouse");
     enableButton("businessCard");
     enableButton("mockhouseCrm");
@@ -89,6 +111,7 @@ mockhouse.addEventListener("click", function() {
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse in Github"
 
+    enableButton("toDo");
     enableButton("interestingCounter");
     enableButton("businessCard");
     enableButton("mockhouseCrm");
@@ -107,6 +130,7 @@ mockhouseCrm.addEventListener("click", function() {
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "Mockhouse CRM in Github"
 
+    enableButton("toDo");
     enableButton("mockhouse");
     enableButton("businessCard");
     enableButton("interestingCounter");
@@ -125,6 +149,7 @@ businessCard.addEventListener("click", function() {
     document.getElementById("repoURL").rel = "noopener noreferrer"
     document.getElementById("repoURL").textContent = "React Business Card in Github"
 
+    enableButton("toDo");
     enableButton("mockhouse");
     enableButton("mockhouseCrm");
     enableButton("interestingCounter");
