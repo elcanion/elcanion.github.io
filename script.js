@@ -56,6 +56,7 @@ about.addEventListener("click", function() {
     document.getElementById("aboutDiv").style.display = "block"
     document.getElementById("iframe").style.display = "none"
     document.getElementById("projectHeader").style.display = "none"
+    enableButton("notepad");
     enableButton("toDo");
     enableButton("mockhouse");
     enableButton("mockhouseCrm");
@@ -68,7 +69,7 @@ notepad.addEventListener("click", function() {
     document.getElementById("iframe").style.display = "inline"
     document.getElementById("aboutDiv").style.display = "none"
 
-    document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Typescript</li><li>styled-components</li>";
+    document.getElementById("headerList").innerHTML = "<li>ReactJS</li><li>Typescript</li><li>styled-components</li><li>Firebase Firestore</li>";
     document.getElementById("repoURL").href = "https://github.com/elcanion/notes-typescript/"
     document.getElementById("repoURL").target = "_blank"
     document.getElementById("repoURL").rel = "noopener noreferrer"
